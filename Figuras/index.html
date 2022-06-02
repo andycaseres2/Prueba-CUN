@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>App figuras</title>
+</head>
+
+<body>
+  <div class="app">
+
+    <h1>App Figuras</h1>
+    <select id="select" onchange={showInp()}>
+      <option value="selecciona" id="selecciona">selecciona</option>
+      <option value="circulo" id="circulo">circulo</option>
+      <option value="triangulo" id="triangulo">triangulo</option>
+      <option value="cuadrado" id="cuadrado">cuadrado</option>
+    </select>
+    <input id="trianguloaltura" type="number" placeholder="altura">
+    <input id="triangulobase" type="number" placeholder="base">
+    <input id="circuloradio" type="number" placeholder="radio">
+    <input id="cuadradolado1" type="number" placeholder="lado">
+    <input id="cuadradolado2" type="number" placeholder="lado">
+    <input id="btn" type="submit" value="Calcular">
+
+    <h2>resultado : <span id="result"></span> </h2>
+
+
+    <script src="./figuras.js"></script>
+  </div>
+</body>
+
+</html>
